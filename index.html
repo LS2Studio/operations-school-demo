@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operations School | Get Your Business Legit</title>
+<meta name="description" content="Operations School trains BIPOC entrepreneurs to run their businesses, not just start them. 9-week program, 1,000+ businesses served, Detroit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --purple: #6B3FA0;
+  --purple-dark: #4A2B70;
+  --yellow: #FFD93D;
+  --coral: #FF6B6B;
+  --teal: #4ECDC4;
+  --cream: #FFF9E6;
+  --ink: #1A1A2E;
+}
+body { font-family: 'DM Sans', sans-serif; color: var(--ink); background: var(--cream); line-height: 1.6; overflow-x: hidden; }
+h1, h2, h3 { font-family: 'Bricolage Grotesque', sans-serif; }
+a { text-decoration: none; color: inherit; }
+
+/* Demo Banner */
+.demo-banner { background: var(--coral); color: white; text-align: center; padding: 10px 20px; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; position: sticky; top: 0; z-index: 1000; }
+.demo-banner a { text-decoration: underline; }
+
+/* Nav */
+nav { padding: 24px 0; position: sticky; top: 36px; background: var(--cream); z-index: 999; border-bottom: 3px solid var(--ink); }
+.nav-inner { max-width: 1300px; margin: 0 auto; padding: 0 32px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'Bricolage Grotesque', sans-serif; font-size: 28px; font-weight: 800; }
+.logo span { background: var(--yellow); padding: 2px 8px; border-radius: 4px; }
+.nav-links { display: flex; gap: 28px; font-size: 14px; font-weight: 700; }
+.nav-links a:hover { color: var(--purple); }
+.nav-cta { background: var(--ink); color: white; padding: 12px 24px; border-radius: 100px; font-weight: 700; }
+.nav-cta:hover { background: var(--purple); }
+
+/* Hero - Bold, colorful, playful */
+.hero { max-width: 1300px; margin: 0 auto; padding: 80px 32px 60px; text-align: center; position: relative; }
+.hero-badge { display: inline-block; background: var(--yellow); padding: 8px 20px; border-radius: 100px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--ink); margin-bottom: 28px; transform: rotate(-2deg); }
+.hero h1 { font-size: 88px; line-height: 0.95; font-weight: 800; letter-spacing: -3px; margin-bottom: 24px; }
+.hero h1 .highlight { background: linear-gradient(transparent 60%, var(--yellow) 60%); padding: 0 8px; }
+.hero h1 .purple { color: var(--purple); }
+.hero p { font-size: 21px; line-height: 1.6; max-width: 700px; margin: 0 auto 36px; color: rgba(26,26,46,0.75); }
+.hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 60px; }
+.btn-primary { background: var(--purple); color: white; padding: 18px 40px; border-radius: 100px; font-size: 16px; font-weight: 700; border: 3px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); transition: transform 0.2s, box-shadow 0.2s; }
+.btn-primary:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
+.btn-secondary { background: white; color: var(--ink); padding: 18px 40px; border-radius: 100px; font-size: 16px; font-weight: 700; border: 3px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); transition: transform 0.2s, box-shadow 0.2s; }
+.btn-secondary:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
+
+/* Stats bar */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1000px; margin: 0 auto; }
+.stat { background: white; border: 3px solid var(--ink); border-radius: 16px; padding: 28px 20px; box-shadow: 4px 4px 0 var(--ink); }
+.stat-value { font-family: 'Bricolage Grotesque', sans-serif; font-size: 44px; font-weight: 800; line-height: 1; margin-bottom: 8px; }
+.stat:nth-child(1) .stat-value { color: var(--purple); }
+.stat:nth-child(2) .stat-value { color: var(--coral); }
+.stat:nth-child(3) .stat-value { color: var(--teal); }
+.stat:nth-child(4) .stat-value { color: var(--purple); }
+.stat-label { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: rgba(26,26,46,0.6); }
+
+/* Section */
+.section { max-width: 1300px; margin: 0 auto; padding: 100px 32px; }
+.section-label { display: inline-block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; padding: 8px 16px; border-radius: 100px; border: 2px solid var(--ink); margin-bottom: 20px; }
+.section h2 { font-size: 56px; line-height: 1.05; font-weight: 800; letter-spacing: -2px; margin-bottom: 20px; }
+.section-intro { font-size: 19px; line-height: 1.7; color: rgba(26,26,46,0.7); max-width: 650px; }
+
+/* Problem/Solution */
+.problem { background: var(--purple); color: white; border-radius: 24px; padding: 60px 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px; }
+.problem h3 { font-size: 32px; margin-bottom: 20px; line-height: 1.2; }
+.problem p { font-size: 17px; line-height: 1.7; opacity: 0.9; margin-bottom: 16px; }
+.problem ul { list-style: none; }
+.problem li { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.2); font-size: 16px; }
+.problem li::before { content: '✕ '; color: var(--coral); font-weight: 700; }
+.problem li.yes::before { content: '✓ '; color: var(--yellow); font-weight: 700; }
+
+/* Program - Week by week */
+.program-weeks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 60px; }
+.week { background: white; border: 3px solid var(--ink); border-radius: 16px; padding: 32px 28px; box-shadow: 4px 4px 0 var(--ink); position: relative; }
+.week-num { position: absolute; top: -16px; left: 24px; background: var(--yellow); border: 2px solid var(--ink); border-radius: 100px; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+.week h3 { font-size: 22px; margin: 16px 0 12px; line-height: 1.3; }
+.week p { font-size: 15px; line-height: 1.6; color: rgba(26,26,46,0.7); }
+.week-icon { font-size: 36px; margin-bottom: 8px; }
+
+/* Impact stories */
+.stories { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 60px; }
+.story { background: white; border: 3px solid var(--ink); border-radius: 20px; overflow: hidden; box-shadow: 6px 6px 0 var(--ink); }
+.story img { width: 100%; height: 280px; object-fit: cover; }
+.story-content { padding: 32px; }
+.story-content h3 { font-size: 24px; margin-bottom: 12px; }
+.story-content p { font-size: 16px; line-height: 1.7; color: rgba(26,26,46,0.75); margin-bottom: 16px; }
+.story-quote { font-family: 'Bricolage Grotesque', sans-serif; font-size: 19px; font-weight: 600; line-height: 1.5; margin-bottom: 16px; }
+.story-author { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--purple); }
+
+/* Team */
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 60px; }
+.team-member { text-align: center; }
+.team-member img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 3px solid var(--ink); margin-bottom: 16px; }
+.team-member h3 { font-size: 18px; margin-bottom: 4px; }
+.team-member p { font-size: 13px; color: rgba(26,26,46,0.6); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+
+/* CTA */
+.cta { background: var(--ink); color: white; border-radius: 24px; padding: 80px 48px; text-align: center; margin-top: 60px; position: relative; overflow: hidden; }
+.cta::before { content: ''; position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; background: var(--yellow); border-radius: 50%; opacity: 0.2; }
+.cta::after { content: ''; position: absolute; bottom: -80px; left: -80px; width: 250px; height: 250px; background: var(--coral); border-radius: 50%; opacity: 0.2; }
+.cta h2 { font-size: 56px; margin-bottom: 20px; position: relative; z-index: 1; }
+.cta p { font-size: 19px; max-width: 600px; margin: 0 auto 36px; opacity: 0.85; position: relative; z-index: 1; }
+.cta .btn-primary { position: relative; z-index: 1; background: var(--yellow); color: var(--ink); }
+
+/* Footer */
+footer { max-width: 1300px; margin: 0 auto; padding: 60px 32px 40px; border-top: 3px solid var(--ink); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+footer .logo { font-size: 22px; }
+footer p { font-size: 13px; color: rgba(26,26,46,0.6); }
+
+@media (max-width: 900px) {
+  .hero h1 { font-size: 52px; }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .problem { grid-template-columns: 1fr; padding: 40px 28px; }
+  .program-weeks { grid-template-columns: 1fr; }
+  .stories { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr 1fr; }
+  .section h2 { font-size: 36px; }
+  .cta h2 { font-size: 36px; }
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="demo-banner">
+  Demo site built by Lexis Sapphire Studio for Operations School • <a href="https://lexissapphirestudio.com/">See more work</a>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">Operations <span>School</span></a>
+    <div class="nav-links">
+      <a href="#program">The Program</a>
+      <a href="#impact">Impact</a>
+      <a href="#team">Team</a>
+      <a href="#apply">Apply</a>
+    </div>
+    <a href="#apply" class="nav-cta">Apply Now</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">🎓 Now enrolling for 2027</div>
+  <h1>Starting a business is easy.<br><span class="purple">Running one</span> is the<br><span class="highlight">real work.</span></h1>
+  <p>Operations School teaches BIPOC entrepreneurs how to actually run their businesses. Systems, SOPs, technology, and operations, the stuff nobody else teaches. Because a great idea without good operations is just a hobby.</p>
+  <div class="hero-buttons">
+    <a href="#apply" class="btn-primary">Apply for the Program →</a>
+    <a href="#program" class="btn-secondary">See What You'll Learn</a>
+  </div>
+  
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value">1,000+</div>
+      <div class="stat-label">Businesses trained</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">$2.8M</div>
+      <div class="stat-label">Grant to expand</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">9 weeks</div>
+      <div class="stat-label">To get legit</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">$3M+</div>
+      <div class="stat-label">To Detroit economy</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="program">
+  <div class="section-label" style="background: var(--yellow);">The problem</div>
+  <h2>Most business programs teach you to start. Nobody teaches you to operate.</h2>
+  <p class="section-intro">You can get a business plan, a logo, and a website in a weekend. But what happens when you need to hire someone? When your books are a mess? When you're drowning in admin work instead of doing what you love?</p>
+  
+  <div class="problem">
+    <div>
+      <h3>What other programs teach</h3>
+      <ul>
+        <li>How to write a business plan</li>
+        <li>How to get an LLC</li>
+        <li>How to make a logo</li>
+        <li>How to post on social media</li>
+        <li>How to pitch investors</li>
+      </ul>
+    </div>
+    <div>
+      <h3>What Operations School teaches</h3>
+      <ul>
+        <li class="yes">How to build systems that run without you</li>
+        <li class="yes">How to create SOPs your team actually follows</li>
+        <li class="yes">How to use technology to save time</li>
+        <li class="yes">How to manage finances and cash flow</li>
+        <li class="yes">How to hire, onboard, and manage people</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+  <div class="section-label" style="background: var(--teal); color: white; border-color: var(--ink);">The program</div>
+  <h2>Get Your Business Legit in 9 weeks.</h2>
+  <p class="section-intro">Our flagship program takes you from scattered to systematic. You'll leave with real systems, real SOPs, and real clarity on how to run your business like a business.</p>
+  
+  <div class="program-weeks">
+    <div class="week">
+      <div class="week-num">Weeks 1-3</div>
+      <div class="week-icon">📋</div>
+      <h3>Foundation</h3>
+      <p>Business structure, legal basics, financial setup, and the mindset shift from hustler to CEO. Get your house in order.</p>
+    </div>
+    <div class="week">
+      <div class="week-num">Weeks 4-6</div>
+      <div class="week-icon">⚙️</div>
+      <h3>Systems</h3>
+      <p>Build your standard operating procedures, choose your tech stack, automate the repetitive work, and create workflows that actually work.</p>
+    </div>
+    <div class="week">
+      <div class="week-num">Weeks 7-9</div>
+      <div class="week-icon">🚀</div>
+      <h3>Scale</h3>
+      <p>Hiring and team building, customer experience, marketing systems, and a 90-day action plan to keep the momentum going after graduation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="impact" style="padding-top: 0;">
+  <div class="section-label" style="background: var(--coral); color: white;">Real results</div>
+  <h2>Our graduates don't just learn. They transform.</h2>
+  
+  <div class="stories">
+    <div class="story">
+      <img src="images/operations-school-team.jpg" alt="Operations School graduates">
+      <div class="story-content">
+        <div class="story-quote">"After attending every entrepreneurial program in the city, Operations School was the first program that taught me how to put everything I'd learned into practice."</div>
+        <p>Cathryn Coleman came to Operations School after completing multiple business programs. She had the ideas and the passion, but she didn't have the systems to make it work. Now her business, Bouncing Around the Motor City, runs on solid operations.</p>
+        <div class="story-author">Cathryn Coleman • Bouncing Around the Motor City</div>
+      </div>
+    </div>
+    <div class="story">
+      <img src="images/centric-place.jpg" alt="Centric Place">
+      <div class="story-content">
+        <div class="story-quote">"Operations School gave me the structure I didn't know I needed. I went from overwhelmed to organized in 9 weeks."</div>
+        <p>Our graduates report saving 10-15 hours per week on administrative work after implementing the systems they learned. That's time they get back to focus on growth, customers, and the work they actually love.</p>
+        <div class="story-author">Operations School Graduate • Class of 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="team" style="padding-top: 0;">
+  <div class="section-label" style="background: white;">The team</div>
+  <h2>Learn from people who've done it.</h2>
+  <p class="section-intro">Our instructors and team members have built and run businesses themselves. They know what works because they've lived it.</p>
+  
+  <div class="team-grid">
+    <div class="team-member">
+      <img src="images/racheal-allen.jpg" alt="Racheal Allen">
+      <h3>Racheal Allen</h3>
+      <p>Founder & CEO</p>
+    </div>
+    <div class="team-member">
+      <img src="images/stacie-hunter.jpg" alt="Dr. Stacie Hunter">
+      <h3>Dr. Stacie Hunter</h3>
+      <p>Managing Director</p>
+    </div>
+    <div class="team-member">
+      <img src="images/alyssa-williams.jpg" alt="Alyssa Williams">
+      <h3>Alyssa Williams</h3>
+      <p>Director of Programs</p>
+    </div>
+    <div class="team-member">
+      <img src="images/kiylise-lowe.jpg" alt="Kiylise Lowe">
+      <h3>Kiylise Lowe</h3>
+      <p>Technical Assistance</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="apply" style="padding-top: 0;">
+  <div class="cta">
+    <h2>Ready to get your business legit?</h2>
+    <p>Applications are open for our 2027 cohorts. Join 1,000+ entrepreneurs who've learned to run their businesses like real businesses.</p>
+    <a href="mailto:info@operationsschool.com" class="btn-primary">Apply Now →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">Operations <span>School</span></div>
+  <p>Farmington Hills, Michigan • A program of Centric Place</p>
+  <p>Demo by <a href="https://lexissapphirestudio.com/" style="text-decoration: underline;">Lexis Sapphire Studio</a></p>
+</footer>
+
+</body>
+</html>
